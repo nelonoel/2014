@@ -1,10 +1,569 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Aaron Noel De Leon</title>
-</head>
-<body>
-	
-</body>
+<html>
+    <head>
+        <title>Aaron Noel De Leon | Full-Stack Web Developer & Multimedia Artist</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    </head>
+    <body class="loading">
+        <div id="loader">
+            <ul>
+                <span class="logo-title">nelonoel</span>
+                <span class="loading-title">Initializing..</span>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <header>
+            <div class="container">
+                <a href="#about" class="logo">
+                    <span class="dark-primary">nelo</span><span class="light-primary">noel</span>
+                </a>
+                <span id="toggle">
+                    <a href="#menu"><i class="fa fa-bars"></i></a>
+                </span>
+                <ul>
+                    <li data-menuanchor="about" class="active">
+                        <a href="#about">
+                            <i class="fa fa-user"></i>
+                            about</a>
+                    </li>
+                    <li data-menuanchor="skills">
+                        <a href="#skills">
+                            <i class="fa fa-magic"></i>
+                            skills</a>
+                    </li>
+                    <li data-menuanchor="works">
+                        <a href="#works">
+                            <i class="fa fa-laptop"></i>
+                            works</a>
+                    </li>
+                    <li data-menuanchor="contact">
+                        <a href="#contact">
+                            <i class="fa fa-phone-square"></i>
+                            contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <ul class="icon-buttons">
+                <li data-menuanchor="about" class="active">
+                    <a href="#about">
+                        <i class="fa fa-2x fa-user"></i>
+                        <span class="tooltip">About</span>
+                    </a>
+                </li>
+                <li data-menuanchor="skills">
+                    <a href="#skills">
+                        <i class="fa fa-2x fa-magic"></i>
+                        <span class="tooltip">Skills</span>
+                    </a>
+                </li>
+                <li data-menuanchor="works">
+                    <a href="#works">
+                        <i class="fa fa-2x fa-laptop"></i>
+                        <span class="tooltip">Works</span>
+                    </a>
+                </li>
+                <li data-menuanchor="contact">
+                    <a href="#contact">
+                        <i class="fa fa-2x fa-phone-square"></i>
+                        <span class="tooltip">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <div class="wrapper">
+                    <div class="left block description vc">
+                        <h1>Hello there!</h1>
+                        <p>
+                            My name is Aaron Noel De Leon. <br />
+                            I am a full-stack web developer and multimedia artist.
+                        </p>
+                        <div class="line"></div>
+                        <div class="icon-buttons">
+                            <a href="mailto:hello@nelonoel.com">
+                                <i class="fa fa-2x fa-envelope"></i>
+                                <span class="tooltip">E-mail</span>
+                            </a>
+                            <a target="new" href="http://www.linkedin.com/profile/view?id=274466397"><i class="fa fa-2x fa-linkedin-square"></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                            <a target="new" href="http://www.twitter.com/nelonoel"><i class="fa fa-2x fa-twitter"></i>
+                                <span class="tooltip">Twitter</span>
+                            </a>
+                            <a target="new" href="./cv.pdf"><i class="fa fa-2x fa-file"></i>
+                                <span class="tooltip">Resum&eacute;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right block visuals vc">
+                        <img id="nelo" class="member" src="assets/img/avatar.png" />
+                    </div>
+                </div>
+                <div class="more">
+                    <span>
+                        <i class="fa fa-arrow-circle-down"></i> read more
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="section" id="section1">
+                <div class="wrapper">
+                    <div class="right block description vc">
+                        <h1>Skills</h1>
+                        <p>
+                            From designing custom graphics and user experience up to tying 
+                            complicated app processes to data models, I can be your man.
+                        </p>
+                    </div>
+                    <div class="left block visuals vc tech-logos">
+                        <div class="tech-logo angular angular-bg"></div>
+                        <div class="tech-logo photoshop photoshop-bg"></div>
+                        <div class="tech-logo php php-bg"></div>
+                        <div class="tech-logo mysql mysql-bg"></div><br />
+                        <div class="tech-logo ionic ionic-bg"></div>
+                        <div class="tech-logo html5 html5-bg"></div>
+                        <div class="tech-logo css3 css3-bg"></div>
+                        <div class="tech-logo jquery jquery-bg"></div><br />
+                        <div class="tech-logo jquery-ui jquery-ui-bg"></div>
+                        <div class="tech-logo phonegap phonegap-bg"></div>
+                        <div class="tech-logo bootstrap bootstrap-bg"></div>
+                        <div class="tech-logo facebook facebook-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section2">
+                
+                <div class="slide" id="alisto" data-anchor="alisto">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Alisto.PH</h1>
+                            <p class="award">
+                                <i class="fa fa-trophy"></i>
+                                1<sup>st</sup> Runner Up & Best Student Team Award, Readysaster 2014
+                            </p>
+                            <p class="info">
+                                A computer-aided dispatch system which functions as asset
+                                and response manager, weather and crowd-sourced hazard map.
+                                It's like <a href="http://waze.com">waze</a> for disasters.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech angular-bg">
+                                    <i class="icon angular"></i>
+                                    <span class="tooltip">AngularJS</span>
+                                </span>
+                                <span class="firebase-bg">
+                                    <i class="fa fa-2x fa-fire"></i>
+                                    <span class="tooltip">FireBase</span>
+                                </span>
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech photoshop-bg">
+                                    <i class="icon photoshop"></i>
+                                    <span class="tooltip">Photoshop</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/alisto.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="panlipi" data-anchor="panlipi">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Panlipi</h1>
+                            <p class="award">
+                                <i class="fa fa-trophy"></i>
+                                Champion, Caritakathon 2014
+                            </p>
+                            <p class="info">
+                                A responsive website for Panlipi -
+                                a non-profit organization empowering indigenous Filipinos
+                                through community development and ancestral domain protection.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech photoshop-bg">
+                                    <i class="icon photoshop"></i>
+                                    <span class="tooltip">Photoshop</span>
+                                </span>
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-bg">
+                                    <i class="icon jquery"></i>
+                                    <span class="tooltip">JavaScript</span>
+                                </span>
+                                <span class="tech angular-bg">
+                                    <i class="icon angular"></i>
+                                    <span class="tooltip">AngularJS</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/panlipi.jpg" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide" id="ellen" data-anchor="ellen">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Ellen</h1>
+                            <p class="silver award">
+                                <i class="fa fa-trophy"></i>
+                                2<sup>nd</sup> Runner Up, PCW App Dev Contest
+                            </p>
+                            <p class="info">
+                                A hybrid mobile app developed in celebration of Philippine Women's Month,
+                                Ellen is a community-powered chat bot that can answer women's most confidential questions.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech angular-bg">
+                                    <i class="icon angular"></i>
+                                    <span class="tooltip">AngularJS</span>
+                                </span>
+                                <span class="tech ionic-bg">
+                                    <i class="icon ionic"></i>
+                                    <span class="tooltip">Ionic Framework</span>
+                                </span>
+                                <span class="firebase-bg">
+                                    <i class="fa fa-2x fa-fire"></i>
+                                    <span class="tooltip">FireBase</span>
+                                </span>
+                                <span class="tech phonegap-bg">
+                                    <i class="icon phonegap"></i>
+                                    <span class="tooltip">PhoneGap</span>
+                                </span>
+                                <span class="tech photoshop-bg">
+                                    <i class="icon photoshop"></i>
+                                    <span class="tooltip">Photoshop</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/ellen.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="phtweet" data-anchor="phtweet">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>PH Tweet</h1>
+                            <p class="bronze award">
+                                <i class="fa fa-trophy"></i>
+                                Top 10, Trend Micro Big Data Contest
+                            </p>
+                            <p class="info">
+                                Targeted for brand managers or even modern day researchers, 
+                                PH Tweet uses big data analysis to characterize
+                                Filipino tweets about a particular topic.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="twitter-bg">
+                                    <i class="fa fa-2x fa-twitter"></i>
+                                    <span class="tooltip">Twitter API</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-bg">
+                                    <i class="icon jquery"></i>
+                                    <span class="tooltip">jQuery</span>
+                                </span>
+                                <span class="tech php-bg">
+                                    <i class="icon php"></i>
+                                    <span class="tooltip">PHP</span>
+                                </span>
+                                <span class="tech mysql-bg">
+                                    <i class="icon mysql"></i>
+                                    <span class="tooltip">MySQL</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/phtweet.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="riant" data-anchor="riant">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Riant</h1>
+                            <p class="award">
+                                <i class="fa fa-trophy"></i>
+                                Accepted Paper, Philippine Computing Science Congress - Davao City
+                            </p>
+                            <p class="info">
+                                Riant is a web-based integrated development environment (IDE) which
+                                features a drag-and-drop page designer, an advanced code editor
+                                and a file explorer for developing web apps.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-bg">
+                                    <i class="icon jquery"></i>
+                                    <span class="tooltip">jQuery</span>
+                                </span>
+                                <span class="tech php-bg">
+                                    <i class="icon php"></i>
+                                    <span class="tooltip">PHP</span>
+                                </span>
+                                <span class="tech mysql-bg">
+                                    <i class="icon mysql"></i>
+                                    <span class="tooltip">MySQL</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/riant.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="pledgr" data-anchor="pledgr">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Pledgr</h1>
+                            <p class="bronze award">
+                                <i class="fa fa-trophy"></i>
+                                3<sup>rd</sup> Runner Up, GlobeLabs Developer Day
+                            </p>
+                            <p class="info">
+                                Developed after the strike of typhoon Yolanda,
+                                Pledgr is a web app that recommends charitable activities based
+                                on your location, skills and interests.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech bootstrap-bg">
+                                    <i class="icon bootstrap"></i>
+                                    <span class="tooltip">Bootstrap</span>
+                                </span>
+                                <span class="tech php-bg">
+                                    <i class="icon php"></i>
+                                    <span class="tooltip">PHP</span>
+                                </span>
+                                <span class="tech mysql-bg">
+                                    <i class="icon mysql"></i>
+                                    <span class="tooltip">MySQL</span>
+                                </span>
+                                <span class="sms-bg">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="tooltip">SMS Integration</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/pledgr.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="casa" data-anchor="casa">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Casa</h1>
+                            <p class="bronze award">
+                                <i class="fa fa-trophy"></i>
+                                Entry, Caritakathon 2013
+                            </p>
+                            <p class="info">
+                                A responsive web site for Casa San Miguel - a charity organization which
+                                aims to integrate culture and community development in Zambales through the arts.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech photoshop-bg">
+                                    <i class="icon photoshop"></i>
+                                    <span class="tooltip">Photoshop</span>
+                                </span>
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-bg">
+                                    <i class="icon jquery"></i>
+                                    <span class="tooltip">JavaScript</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/casa.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="election" data-anchor="election">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>UE Election</h1>
+                            <p class="award">
+                                <i class="fa fa-trophy"></i>
+                                Accepted Paper, Institute of Electrical &amp; Electronic Engineers (IEEE) - Japan
+                            </p>
+                            <p class="info">
+                                Used by thousands of students, the University of the
+                                East's Student Council Election System generates reliable
+                                ballot counts in seconds.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-bg">
+                                    <i class="icon jquery"></i>
+                                    <span class="tooltip">jQuery</span>
+                                </span>
+                                <span class="tech php-bg">
+                                    <i class="icon php"></i>
+                                    <span class="tooltip">PHP</span>
+                                </span>
+                                <span class="tech mysql-bg">
+                                    <i class="icon mysql"></i>
+                                    <span class="tooltip">MySQL</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/election.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="colonel" data-anchor="colonel">
+                    <div class="wrapper">
+                        <div class="left block description vc">
+                            <h1>Colonel</h1>
+                            <p class="silver award">
+                                <i class="fa fa-trophy"></i>
+                                2<sup>nd</sup> Runner Up &amp; So Good Design Award, KFC Youth Innovation Challenge
+                            </p>
+                            <p class="info">
+                                The Cooking Colonel is an advertainment mobile game which integrates 
+                                KFC's latest products into fun mini games where players can redeem actual food items
+                                using in-game credits.
+                            </p>
+                            <div class="line"></div>
+                            <div class="icon-buttons">
+                                <span class="tech photoshop-bg">
+                                    <i class="icon photoshop"></i>
+                                    <span class="tooltip">PhotoShop</span>
+                                </span>
+                                <span class="tech html5-bg">
+                                    <i class="icon html5"></i>
+                                    <span class="tooltip">HTML5</span>
+                                </span>
+                                <span class="tech css3-bg">
+                                    <i class="icon css3"></i>
+                                    <span class="tooltip">CSS3</span>
+                                </span>
+                                <span class="tech jquery-ui-bg">
+                                    <i class="icon jquery-ui"></i>
+                                    <span class="tooltip">jQuery Mobile</span>
+                                </span>
+                                <span class="tech phonegap-bg">
+                                    <i class="icon phonegap"></i>
+                                    <span class="tooltip">PhoneGap</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="right block visuals vc">
+                            <img class="screenshot" src="assets/img/colonel.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section4">
+                <div class="wrapper">
+                    <div class="center block description vc">
+                        <div class="profile-picture"></div>
+                        <h2>Aaron Noel De Leon</h2>
+                        <h3>900 Italia St., Muzon Taytay, Rizal PH</h3>
+                        <p><a href="mailto:hello@nelonoel.com">hello@nelonoel.com</a></p>
+                        <p>0916 837 5550</p>
+                        <div class="line"></div>
+                        <div class="icon-buttons">
+                            <a href="mailto:hello@nelonoel.com">
+                                <i class="fa fa-2x fa-envelope"></i>
+                                <span class="tooltip">E-mail</span>
+                            </a>
+                            <a target="new" href="http://www.linkedin.com/profile/view?id=274466397"><i class="fa fa-2x fa-linkedin-square"></i>
+                                <span class="tooltip">LinkedIn</span>
+                            </a>
+                            <a target="new" href="http://www.twitter.com/nelonoel"><i class="fa fa-2x fa-twitter"></i>
+                                <span class="tooltip">Twitter</span>
+                            </a>
+                            <a target="new" href="./cv.pdf"><i class="fa fa-2x fa-file"></i>
+                                <span class="tooltip">Resum&eacute;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	-->
+        <script src="assets/js/jquery.min.js"></script>	
+        <script src="assets/js/jquery-ui.min.js"></script>	
+        <script src="assets/js/jquery.flexverticalcenter.js"></script>	
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>	
+        <script type="text/javascript" src="assets/js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="assets/js/core.js"></script>
+
+    </body>
 </html>
