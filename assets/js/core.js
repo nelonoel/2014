@@ -23,7 +23,7 @@ $(document).ready(function() {
 
             $('#fullpage').fullpage({
                 animateAnchor: false,
-                slidesColor: ['#33B8F1', '#36D7B7', '#4ad', '#2ECC71'],
+                slidesColor: ['#33B8F1', '#36D7B7', '#4ad', 'rgb(103, 88, 155)'],
                 anchors: ['about', 'skills', 'works', 'contact'],
                 menu: 'header ul, aside ul',
                 slidesNavigation: true,
