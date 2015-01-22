@@ -8,7 +8,7 @@ h1,h2,h3 {
     font-weight: normal;
 }
 h1{
-    font-size: 4em;	
+    font-size: 4em;
 }
 
 h2 {
@@ -132,7 +132,7 @@ body.loading #loader {
 #loader ul {
     position: absolute;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;  
+    top: 0; left: 0; bottom: 0; right: 0;
     width: 250px;
     height: 250px;
     padding: 0;
@@ -155,7 +155,7 @@ body.loading #loader {
     -moz-animation:    zoom 3s infinite;
     -webkit-animation: zoom 3s infinite;
     transform:         scale(0);
-    -o-transform:      scale(0);  
+    -o-transform:      scale(0);
     -ms-transform:     scale(0);
     -moz-transform:    scale(0);
     -webkit-transform: scale(0);
@@ -202,7 +202,8 @@ body.loading #loader {
 }
 
 header {
-    border-bottom: rgba(0,0,0,0.03) solid 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-bottom: rgba(0,0,0,0.125) solid 1px;
     left: 0;
     min-height: 50px;
     overflow: hidden;
@@ -228,26 +229,19 @@ header li {
 
 header li.active {
     background: rgba(0,0,0,0.05);
-    transition: all 0.4s ease;
+    transition: all 1.5s ease;
 }
 
 .logo {
-    background: rgba(0,0,0,0.03);
-    border: rgba(0,0,0,0.05) solid 2px;
-    box-shadow: inset 70px 60px 0 rgba(255,255,255,0.075);
-    border-radius: 50%;
-    display: inline-block;
     font-size: 2.25em;
-    padding: 2.25em 0.75em;
-    position: absolute;
-    text-align: center;
-    top: -2.25em;
-    left: 5%;
+    padding: 0.1em 0.75em;
+    float: left;
+    opacity: 0.8;
     transition: all .4s ease;
 }
 
 .logo:hover {
-    box-shadow: inset 90px 80px 0 rgba(255,255,255,0.075);
+    opacity: 1;
     transition: all .4s ease;
 }
 
@@ -271,28 +265,38 @@ header a:hover, header a:hover .fa {
 }
 
 aside ul {
-    background: rgba(0,0,0,0.09);
-    border-bottom: rgba(0,0,0,0.03) solid 3px;
+    pointer-events: none;
     opacity: 0;
-    padding: 10px 0 7px 0;
+    padding: 3em 0;
+    bottom: 0;
     position: fixed;
     list-style-type: none;
     left: 0;
-    right: -999px;
-    top: 53px;
-    z-index: 2;
+    right: 0;
+    top: 51px;
+    z-index: 6;
     text-align: center;
-    transition: all .6s ease;
+    transition: opacity .4s ease;
+}
+
+aside ul.visible .tooltip {
+    opacity: 1;
+}
+
+aside div {
+    margin-bottom: 4em;
+    display: inline;
 }
 
 aside li {
     display: inline-block;
+    padding: 0 1em;
 }
 
 aside ul.visible {
-    right: 0;
-    opacity: 1;
-    transition: all .6s ease;
+    opacity: 0.98;
+    pointer-events: inherit;
+    transition: opacity .4s ease;
 }
 
 .more {
@@ -330,7 +334,7 @@ aside ul.visible {
     right: -1.5em;
     margin: 0 1.5em;
     bottom: 0;
-    padding: 0.5em 0.75em;
+    padding: 0.4em 0.75em 0.5em 0.75em;
 }
 
 #toggle:hover i {
@@ -358,11 +362,11 @@ aside ul.visible {
     opacity: 0.75;
     padding: 10px;
     position: relative;
-    width: 24px;
+    width: 1.55em;
     transition: all .4s ease;
 }
 
-.icon-buttons li.active a, .icon-buttons a:hover, .icon-buttons > span:hover{
+aside ul.visible a, .icon-buttons a:hover, .icon-buttons > span:hover{
     box-shadow: 2px 6px 0 rgba(0,0,0,0.06),
         inset 14px 14px 0 rgba(255,255,255,0.12);
     -webkit-transform: scale(1.25);
@@ -519,6 +523,10 @@ aside ul.visible {
 
 /*Slides*/
 
+#smartplaces {
+    background-color: #728DD5;
+}
+
 #alisto {
     background-color: #b8cf5e;
 }
@@ -673,6 +681,11 @@ aside ul.visible {
         left: 0;
         right: 0;
     }
+    .logo {
+        float: none;
+        position: relative;
+        top: 0.1em;
+    }
     .visuals {
         float: none;
         opacity: 0.05;
@@ -693,8 +706,11 @@ aside ul.visible {
         padding: 0 2em;
         margin-left: auto !important;
         margin-right: auto !important;
-        max-width: 90%;
+        max-width: 100%;
         transition: all .4s ease;
+    }
+    .center.description {
+        padding: 0;
     }
     .tech-logos {
         margin-left: auto !important;
@@ -718,14 +734,55 @@ aside ul.visible {
         width: 100%;
     }
     .info {
-        padding: 0 30px;
+        padding: 0 0.25em;
+    }
+    .block {
+        min-width: inherit;
+        max-width: inherit;
     }
 }
 
 /*Mini*/
-@media (max-width: 460px) {
+@media (max-width: 480px) {
     .description {
         -webkit-transform: scale(0.75);
+        padding: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #section2 h1 {
+        font-size: 2.5em;
+    }
+    .icon-buttons {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    .info {
+        font-size: 1.25em;
+    }
+    .fullPage-slidesNav {
+        display: none;
+    }
+    .controlArrow {
+        font-size: 2.5em;
+    }
+    .controlArrow.prev {
+        padding-right: 15px;
+    }
+    .controlArrow.next {
+        padding-left: 15px;
+    }
+    .profile-picture {
+        height: 210px;
+        width: 210px;
+    }
+    .more span {
+        font-size: 0.9em;
+        padding: 15px 20px 10px 20px;
+    }
+    aside div {
+        display: block;
     }
 }
 
@@ -985,31 +1042,31 @@ aside ul.visible {
 
 
 @-webkit-keyframes down {
-    0% { 
+    0% {
     -webkit-transform: none;
 }
-50% { 
+50% {
     -webkit-transform: translateY(8px);
 }
-100% { 
+100% {
     -webkit-transform: none;
 }
 }
 
 @-moz-keyframes down {
-    0% { 
+    0% {
     -moz-transform: none;
 }
-50% { 
+50% {
     -moz-transform: translateY(8px);
 }
-100% { 
+100% {
     -moz-transform: none;
 }
 }
 
 @keyframes zoom {
-    from { transform: scale(0);  opacity: 1; } 
+    from { transform: scale(0);  opacity: 1; }
 30%  { transform: scale(1); }
 100% { transform: scale(1);  opacity: 0; }
 }
