@@ -7,16 +7,16 @@ $(document).ready(function() {
     var loaded = 0;
 
     function changeColors(delay){
-        var delay = delay || 1500
-        var $section = $('.active.section');
-        var bg = $section.css('background-color');
-        var $slide = $section.find('.slide.active');
-        if($slide.length>0){
-            bg = $slide.css('background-color');
-        }
-        $('header, aside ul').animate({
-            'background-color': bg
-        }, delay);
+        // var delay = delay || 1500
+        // var $section = $('.active.section');
+        // var bg = $section.css('background-color');
+        // var $slide = $section.find('.slide.active');
+        // if($slide.length>0){
+        //     bg = $slide.css('background-color');
+        // }
+        // $('header, aside ul').animate({
+        //     'background-color': bg
+        // }, delay);
     }
 
     setTimeout(function() {
