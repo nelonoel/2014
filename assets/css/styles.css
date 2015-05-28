@@ -585,8 +585,6 @@ aside ul.visible a, .icon-buttons a:hover, .icon-buttons > span:hover{
 
 .screenshot:hover {
     box-shadow: 25px 20px 0 rgba(0,0,0,0.06);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
 }
 
 .front-face {
